@@ -66,9 +66,9 @@ for (let index = 0; index < 5; index++) {
 
 
 
-const inputName = document.getElementById('name').value;
-const inputRole = document.getElementById('role').value;
-const inputImage = document.getElementById('image').value;
-const btnAdd = document.getElementById('addMemberButton');
+// const inputName = document.getElementById('name').value;
+// const inputRole = document.getElementById('role').value;
+// const inputImage = document.getElementById('image').value;
+// const btnAdd = document.getElementById('addMemberButton');
 
-btnAdd.addEventListener('click', creaCarta(inputImage, inputName, inputRole));
+// btnAdd.addEventListener('click', creaCarta(inputImage, inputName, inputRole));

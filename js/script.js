@@ -60,8 +60,8 @@ function creaCarta(immagine, nomePersona, posizione) {
 
 }
 
-for (let chiaviOggetto in membriStaff) {
-    creaCarta(membriStaff[chiaviOggetto].foto, membriStaff[chiaviOggetto].nome, membriStaff[chiaviOggetto].lavoro);
+for (let index = 0; index < membriStaff.length; index++) {
+    creaCarta(membriStaff[index].foto, membriStaff[index].nome, membriStaff[index].lavoro);
 }
 
 

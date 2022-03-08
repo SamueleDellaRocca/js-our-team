@@ -60,8 +60,8 @@ function creaCarta(immagine, nomePersona, posizione) {
 
 }
 
-for (let index = 0; index < 5; index++) {
-    creaCarta(membriStaff[index].foto, membriStaff[index].nome, membriStaff[index].lavoro);
+for (let chiaviOggetto in membriStaff) {
+    creaCarta(membriStaff[chiaviOggetto].foto, membriStaff[chiaviOggetto].nome, membriStaff[chiaviOggetto].lavoro);
 }
 
 
@@ -69,10 +69,11 @@ for (let index = 0; index < 5; index++) {
 const btnAdd = document.getElementById('addMemberButton');
 
 function creaCarta2() {
-    const inputName = document.getElementById('name').value;
-    const inputRole = document.getElementById('role').value;
-    const inputImage = document.getElementById('image').value;
-    creaCarta(inputImage, inputName, inputRole);
+    let inputName = document.getElementById('name');
+    let inputRole = document.getElementById('role');
+    let inputImage = document.getElementById('image');
+    creaCarta(inputImage.value, inputName.value, inputRole.value);
+    inputName.value = '';
 }
 
 btnAdd.addEventListener('click', creaCarta2);
